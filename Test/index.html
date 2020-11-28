@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <!-- BS4.5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script>
+        // show in console F12
+        // console.log("Hello"); 
+        // alert : dialog box - program pause when have dialog
+        // alert("ABC");    
+    </script>
+</head>
+
+<body>
+    <input id="txtInput" type="text" value="ừ hứ">
+    <!-- <button onclick="eventClick()">Click me !!!</button> -->
+    <button id="bttnClick">Click me NOW !!!</button>
+    <p id="pText">Name : JKs</p>
+
+    <div id="txtDau">Noi Dung Đầu</div>
+    <button id="btnClickMeDiv">Click me Please !!!</button>
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnDisable">Disable Button Click me !!!</button>
+    <button id="btnAvailable">Available Button Click me !!!</button>
+
+    <img id="imgBulb" src="./img/pic_bulboff.gif" alt="">
+    <button id="btnBulbOff" class="btn btn-danger">OFF</button>
+
+    <button id="btnBulbOn" class="btn btn-success">ON</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>UserName: </label>
+                    <input id="inputUserName" type="text" class="form-control" value="cybersoft">
+                </div>
+                <div class="form-group">
+                    <label>PassWord:</label>
+                    <input id="inputPassWord" type="text" class="form-control" value="cybersoft">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="txtThongBao" style="display: none;"></div>
+            </div>
+        </div>
+        <button id="btnLogin">Đăng nhập</button>
+    </div>
+    <div class="container">
+        <h3>Tính tiền típ</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="">Tổng tiền thanh toán</label>
+              <input id="txtTongTien" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <label for="">Bạn muốn típ bao nhiêu</label>
+                <select class="form-control" id="slPhanTramTip">
+                  <option value="0">Chọn để tiếp</option>
+                  <option value="30">30%</option>
+                  <option value="20">20%</option>
+                  <option value="15">15%</option>
+                  <option value="10">10%</option>
+                  <option value="5">5%</option>
+                </select>
+              </div>
+            </div>  
+            <div class="form-group">
+              <label for="">Muốn share bao nhiêu người</label>
+              <input id="txtSoNguoi" type="text" class="form-control" />
+            </div>
+            <button id="btnTinhTienTip" class="btn btn-danger">Tính tiền</button>
+          </div>
+          <div id="txtThongBaoTienTip" style="display: none">Thông báo tiền típ</div>
+        </div>
+      </div>
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- BS js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
