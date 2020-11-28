@@ -233,5 +233,3 @@ document.getElementById("btnTinhTienTip").addEventListener("click", function () 
 
 
 
-
-
